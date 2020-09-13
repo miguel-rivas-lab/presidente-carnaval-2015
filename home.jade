@@ -1,0 +1,43 @@
+- var pageTitle = "Carnaval Presidente 2015"
+- var site = "Miguel Rivas"
+- var fbPreview = "http://miguelrivas.me/img/portfolio.png"
+- var icoPath = "http://miguelrivas.me/img/logo.png"
+- var icoBackground = "#222"
+- var description = "Landing Page Carnaval Presidente 2015"
+- var keyWords = "aguacate, aguacatekun, santo, domingo, republica, dominicana"
+- var viewPort = false
+
+doctype html
+html
+	head
+		include jade/metatags
+		link(rel="stylesheet" href="css/home_style.css")
+	body
+		aside#block: div
+		aside#cover: div
+
+		#wsite
+			#menu_float.box
+				.content
+					img(src="img/menu_ico.png")
+					.links
+						a(href='#home') INICIO
+						a.selected_2(href='#primer_carnaval') CARNAVAL PRESIDENTE 2015
+						a(href='#destinos') DESTINOS
+						a(href='#') GENERADOR DE TICKETS
+						a(href='#galeria') GALER&Iacute;A
+
+			include jade/inicio
+			include jade/video
+			include jade/destinos
+			include jade/galeria
+
+			footer#footer.box
+				.content
+					| © 2015. TODOS LOS DERECHOS RESERVADOS. CERVEZA PRESIDENTE. EL CONSUMO DE ALCOHOL PERJUDICA LA SALUD.
+					.fright WEBSITE BY CAPITAL DBG
+
+		script(src="http://code.jquery.com/jquery-1.12.4.min.js")
+		script(src="js/jquery.colorbox.js" type="text/javascript")
+		script(src="js/all.js" type="text/javascript")
+		script(src="js/home_script.js" type="text/javascript")
