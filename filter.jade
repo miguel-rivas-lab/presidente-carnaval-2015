@@ -1,0 +1,26 @@
+- var pageTitle = "Carnaval Presidente 2015"
+- var site = "Miguel Rivas"
+- var fbPreview = "https://miguel-rivas.github.io/img/portfolio.png"
+- var icoPath = "https://miguel-rivas.github.io/img/favicon.png"
+- var icoBackground = "#222"
+- var description = "Filtro Carnaval Presidente 2015"
+- var keyWords = "aguacate, aguacatekun, santo, domingo, republica, dominicana"
+- var viewPort = false
+
+doctype html
+html
+	head
+		include jade/metatags
+		link(rel="stylesheet" href="css/filter_style.css")
+	body
+
+		#filtro
+			#logo
+			#formulario
+				.fix
+					input#edad(type="text")
+					a#entrar(href="javascript:void(0)") ENTRAR
+			footer#footer © 2015 - EL CONSUMO DE ALCOHOL PERJUDICA LA SALUD
+
+		script(src="http://code.jquery.com/jquery-1.12.4.min.js")
+		script(src="js/filter_script.js" type="text/javascript")
